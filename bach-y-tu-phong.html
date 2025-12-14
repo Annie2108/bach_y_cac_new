@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bạch Y Tư Phòng – Thư Riêng Gửi Các Chủ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- HEADER CHUẨN (logo trái, menu giữa) -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo-link" aria-label="Bạch Y Các">
+          <img src="assets/img/logo.png"  class="site-logo">
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Sơn Môn</a>
+        <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+        <a href="khai-mon-vien.html">Khai Môn Viện</a>
+        <a href="van-tam-cac.html">Vấn Tâm Các</a>
+        <a href="bach-y-vien.html">Bạch Y Viện</a>
+        <a href="bach-y-tu-phong.html" class="active">Bạch Y Tư Phòng</a>
+      </nav>
+    </div>
+  </header>
+  <!-- PAGE HERO / COVER -->
+<section class="page-hero"
+  style="background-image: url('assets/img/bach-y-tu-phong.png');">
+  <div class="page-hero-inner">
+    <h1>Bạch Y Tư Phòng</h1>
+    <p>
+      Thư riêng gửi Các Chủ. Không public, không phán xét, không làm ồn ngoài sơn môn.
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- TITLE -->
+  <section class="page-title">
+    <h1>Bạch Y Tư Phòng</h1>
+    <p>Nơi gửi thư riêng cho Các Chủ. Không public, không phán xét, không làm ồn ngoài sơn môn.</p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <p>
+      Nếu bạn không tiện kể công khai tại Tâm Cảnh Đường,
+      hoặc muốn thỉnh ý riêng Các Chủ về một chuyện cụ thể,
+      hãy viết thư tại đây. Thư sẽ chỉ hiển thị cho người có trách nhiệm đọc.
+    </p>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section">
+    <h2>Gửi thư riêng</h2>
+
+    <form id="tu-phong-form">
+      <label>Họ và tên *</label>
+      <input type="text" name="name" placeholder="Nhập họ tên của bạn..." required>
+
+      <label>Email *</label>
+      <input type="email" name="email" placeholder="Nhập email để Các Chủ hồi âm..." required>
+
+      <label>Chủ đề</label>
+      <select name="topic">
+        <option value="">-- Chọn một chủ đề --</option>
+        <option value="xet-duyen">Hỏi thêm về hồ sơ Vấn Tâm</option>
+        <option value="chuyen-ca-nhan">Chuyện cá nhân</option>
+        <option value="khoa-hoc">Hỏi về khóa học</option>
+        <option value="khac">Khác</option>
+      </select>
+
+      <label>Tiêu đề thư</label>
+      <input type="text" name="subject" placeholder="Ví dụ: Muốn hỏi thêm về kết quả xét duyên...">
+
+      <label>Mã hồ sơ Vấn Tâm (nếu có)</label>
+      <input type="text" name="application_id" placeholder="Ví dụ: BYC-APP-2025-0012">
+
+      <label>Nội dung chi tiết *</label>
+      <textarea name="content" rows="7" required
+        placeholder="Cứ viết như đang nói chuyện thật. Không cần văn hoa."></textarea>
+
+      <label>
+        <input type="checkbox" name="allow_store" value="1">
+        Cho phép sơn môn lưu trữ thư này để tham chiếu nội bộ (sẽ không công khai).
+      </label>
+
+      <button class="btn" type="submit">Gửi thư đến Bạch Y Tư Phòng</button>
+    </form>
+  </section>
+  <!-- COVER / HERO NHỎ -->
+<section class="page-hero" style="background-image: url('assets/img/bach-y-tu-phong.png');">
+  <div class="page-hero-inner">
+    <h1>Bạch Y Tư Phòng</h1>
+    <p>Thư riêng gửi Các Chủ. Không phán xét. Không công khai.</p>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© Bạch Y Các – 2025.</p>
+    <div class="footer-links">
+      <a href="#">Giới luật</a>
+      <a href="#">Điều khoản</a>
+      <a href="bach-y-tu-phong.html">Liên hệ</a>
+    </div>
+</footer>
+
+</body>
+</html>

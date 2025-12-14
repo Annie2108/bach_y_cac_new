@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vấn Tâm Các – Xét Duyên Nhập Môn</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+       <section class="page-hero" 
+       style="background-image: url('assets/img/van-tam-hero.png');">
+       <div class="page-hero-inner">
+        </div>
+       </section>
+        <div class="main-menu-below">
+    <nav class="main-nav">
+        <a href="index.html" class="active">Sơn Môn</a>
+        <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+        <a href="khai-mon-vien.html">Khai Môn Viện</a>
+        <a href="van-tam-cac.html">Vấn Tâm Các</a>
+        <a href="bach-y-vien.html">Bạch Y Viện</a>
+        <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
+    </nav>
+
+        </nav>
+    </header>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <h1>Vấn Tâm Các</h1>
+        <p>Nơi hành giả gửi tâm ý để xét duyên nhập môn.</p>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section">
+        <h2>Hồ sơ xét duyên</h2>
+
+        <form>
+
+            <!-- COURSE SELECTION -->
+            <label>Môn muốn học *</label>
+            <select>
+                <option value="tuv i">Tử Vi</option>
+                <option value="tutru">Tứ Trụ</option>
+                <option value="phongthuy">Phong Thủy</option>
+            </select>
+
+            <!-- PERSONAL INFO -->
+            <label>Họ và tên *</label>
+            <input type="text" placeholder="Nhập họ tên của bạn...">
+
+            <label>Email *</label>
+            <input type="email" placeholder="Nhập email để sơn môn liên hệ...">
+
+            <label>Số điện thoại (không bắt buộc)</label>
+            <input type="text" placeholder="Nhập số điện thoại nếu muốn">
+
+            <!-- DOB -->
+            <label>Ngày sinh</label>
+            <input type="date">
+
+            <label>Giờ sinh (nếu biết)</label>
+            <input type="text" placeholder="Ví dụ: Tý, Sửu, Dần, hoặc 23:30...">
+
+            <!-- EXPERIENCES -->
+            <label>Bạn đã từng học / đọc gì về huyền học?</label>
+            <textarea rows="4" placeholder="Mô tả trải nghiệm của bạn..."></textarea>
+
+            <label>Vì sao bạn muốn học pháp môn này?</label>
+            <textarea rows="4" placeholder="Hãy nói thật lòng..."></textarea>
+
+            <label>Bạn dự định dùng kiến thức này để làm gì?</label>
+            <select multiple>
+                <option>Tự hiểu bản thân</option>
+                <option>Hỗ trợ người thân</option>
+                <option>Tư vấn cho người khác</option>
+                <option>Học để hành nghề</option>
+                <option>Khác</option>
+            </select>
+
+            <!-- COMMITMENTS -->
+            <label>
+                <input type="checkbox" required>
+                Tôi đồng ý không dùng pháp môn để gây hại, thao túng hay hù dọa người khác.
+            </label>
+
+            <label>
+                <input type="checkbox" required>
+                Tôi hiểu rằng huyền học không phải tư vấn y khoa hoặc pháp lý.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Cho phép sơn môn dùng hồ sơ này (ẩn danh) cho nghiên cứu / case study.
+            </label>
+
+            <button class="btn" type="submit">Gửi hồ sơ xét duyên</button>
+        `
+    }
+</script>
+
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Bạch Y Các – 2025.</p>
+        <div class="footer-links">
+            <a href="#">Giới luật</a>
+            <a href="#">Điều khoản</a>
+            <a href="bach-y-tu-phong.html">Liên hệ</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+<section class="container">
+    <!-- Card A: Duyên đủ -->
+    <div class="card result-card" id="result-duyen-du">
+        <h2>Duyên đã đủ</h2>
+        <p>
+            Trưởng Lão và Các Chủ đã chuẩn thuận.  
+            Bạn có thể tiến hành lễ bái sư để chính thức nhập môn.
+        </p>
+        <a class="btn" href="bai-su-nhan-ten.html">Tiến hành Bái Sư & Nhận tên</a>
+    </div>
+
+    <!-- Card B: Duyên chưa trọn -->
+    <div class="card result-card" id="result-duyen-chua-tron">
+        <h2>Duyên chưa trọn</h2>
+        <p>
+            Căn cơ hiện tại chưa thật sự vững. Bạn có thể tạm dừng lại để tự chiêm nghiệm,
+            hoặc vẫn muốn học thì thỉnh Trưởng Lão giải rõ hơn.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn-secondary" href="bach-y-vien.html">Tạm dừng – về đọc Bạch Y Viện</a>
+            <a class="btn" href="truong-lao-vien.html">Vẫn muốn học – gặp Trưởng Lão</a>
+        </div>
+    </div>
+
+    <!-- Card C: Không khuyến khích -->
+    <div class="card result-card" id="result-khong-khuyen-khich">
+        <h2>Không khuyến khích vào nội môn lúc này</h2>
+        <p>
+            Pháp môn này có thể làm nặng thêm những điều bạn đang mang.  
+            Chúng tôi khuyên bạn tạm thời chỉ đọc – nghe và chăm sóc đời sống của mình trước.
+        </p>
+        <a class="btn-secondary" href="bach-y-vien.html">Về Bạch Y Viện</a>
+        <a class="btn" href="bach-y-tu-phong.html">Muốn chia sẻ riêng – vào Bạch Y Tư Phòng</a>
+    </div>
+</section>
+
+</body>
+</html>

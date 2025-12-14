@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâm Cảnh Đường – Bạch Y Các</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">BẠCH Y CÁC</div>
+        <div class="main-menu-below">
+    <nav class="main-nav">
+        <a href="index.html" class="active">Sơn Môn</a>
+        <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+        <a href="khai-mon-vien.html">Khai Môn Viện</a>
+        <a href="van-tam-cac.html">Vấn Tâm Các</a>
+        <a href="bach-y-vien.html">Bạch Y Viện</a>
+        <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
+    </nav>
+
+    </header>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <h1>Tâm Cảnh Đường</h1>
+        <p>Nơi hành giả kể chuyện đời, chuyện tâm linh, và trải lòng với sơn môn.</p>
+    </section>
+
+    <!-- WRITE STORY BUTTON -->
+    <section class="write-story-section">
+        <a class="btn" href="#write-story">+ Viết Chuyện Mới</a>
+    </section>
+
+    <!-- WRITE STORY FORM -->
+    <section id="write-story" class="story-form">
+        <h2>Viết Chuyện Mới</h2>
+
+        <form>
+            <label>Tiêu đề *</label>
+            <input type="text" placeholder="Nhập tiêu đề câu chuyện...">
+
+            <label>Nội dung *</label>
+            <textarea rows="7" placeholder="Viết câu chuyện hoặc trải nghiệm của bạn..."></textarea>
+
+            <label>Tên hiển thị *</label>
+            <select>
+                <option value="REAL">Hiển thị tên thật</option>
+                <option value="NICKNAME">Hiển thị nickname</option>
+                <option value="ANONYMOUS">Ẩn danh – hành giả vô danh</option>
+            </select>
+
+            <label>Nickname (nếu chọn hiển thị nickname)</label>
+            <input type="text" placeholder="Nhập nickname">
+
+            <label>Chế độ hiển thị *</label>
+            <select>
+                <option value="PUBLIC">Công khai</option>
+                <option value="PRIVATE">Chỉ gửi cho Các Chủ</option>
+            </select>
+
+            <label>Email liên hệ (không hiển thị công khai)</label>
+            <input type="email" placeholder="Nhập email">
+
+            <label>Mong muốn nhận tư vấn</label>
+            <select multiple>
+                <option>Tâm lý</option>
+                <option>Huyền học</option>
+                <option>Định hướng cuộc sống</option>
+                <option>Để Các Chủ đọc là đủ</option>
+            </select>
+
+            <label>
+                <input type="checkbox">
+                Cho phép Bạch Y Các sử dụng câu chuyện này (ẩn danh) để làm nội dung.
+            </label>
+
+            <button class="btn" type="submit">Gửi câu chuyện</button>
+        </form>
+    </section>
+
+    <!-- STORY LIST -->
+    <section class="story-list">
+        <h2>Những câu chuyện gần đây</h2>
+
+        <div class="story-card">
+            <h3>Ví dụ: Một đêm nằm mơ thấy người đã khuất</h3>
+            <p class="meta">Hành giả vô danh • 3 ngày trước • 12 bình luận</p>
+            <p class="excerpt">Đêm ấy trăng mờ, ta nằm mộng thấy người thân đã khuất đứng cuối giường...</p>
+            <a href="#" class="read-more">Đọc tiếp →</a>
+        </div>
+
+        <div class="story-card">
+            <h3>Ví dụ: Tôi cảm giác mình có duyên nghiệp với một người lạ</h3>
+            <p class="meta">Linh Hương • 5 ngày trước • 7 bình luận</p>
+            <p class="excerpt">Những ngày gần đây, tôi liên tục gặp một người ở trong mơ...</p>
+            <a href="#" class="read-more">Đọc tiếp →</a>
+        </div>
+
+        <div class="story-card">
+            <h3>Ví dụ: Hành trình chữa lành sau biến cố</h3>
+            <p class="meta">Thuần Tâm • 1 tuần trước • 4 bình luận</p>
+            <p class="excerpt">Sau biến cố đó, tôi tìm đến huyền học và bắt đầu hiểu chính mình...</p>
+            <a href="#" class="read-more">Đọc tiếp →</a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Bạch Y Các – 2025.</p>
+        <div class="footer-links">
+            <a href="#">Giới luật</a>
+            <a href="#">Điều khoản</a>
+            <a href="bach-y-tu-phong.html">Liên hệ</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

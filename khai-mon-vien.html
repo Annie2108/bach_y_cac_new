@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <title>Khai Môn Viện – Bạch Y Các</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+
+    <!-- CSS RIÊNG CHO 3 PHÁP MÔN Ở KHAI MÔN VIỆN -->
+    <style>
+        .section-phap-mon {
+            max-width: 1120px;
+            margin: 40px auto 60px;
+            padding: 0 16px;
+        }
+
+        .section-phap-mon .section-title {
+            text-align: center;
+            font-family: "Georgia", "Times New Roman", serif;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .phap-mon-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .phap-mon-card {
+            background-color: #fdf7ef;
+            border-radius: 16px;
+            padding: 20px 18px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            border: 1px solid #e3d3c3;
+        }
+
+        .phap-mon-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #3a2b20;
+        }
+
+        .phap-mon-card p {
+            font-size: 14px;
+            color: #6b5a4a;
+            margin-bottom: 10px;
+        }
+
+        .phap-mon-card h4 {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            color: #4c3b2d;
+        }
+
+        .phap-mon-card ul {
+            list-style: disc;
+            padding-left: 18px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #6b5a4a;
+        }
+
+        @media (max-width: 1024px) {
+            .phap-mon-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .phap-mon-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+</head>
+<body>
+
+    <!-- HEADER GIỐNG TRANG CHỦ -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <div class="brand">BẠCH Y CÁC</div>
+            <nav class="main-nav">
+                <a href="index.html">Sơn Môn</a>
+                <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+                <a href="khai-mon-vien.html" class="active">Khai Môn Viện</a>
+                <a href="van-tam-cac.html">Vấn Tâm Các</a>
+                <a href="bach-y-vien.html">Bạch Y Viện</a>
+                <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
+            </nav>
+        </div>
+    </header>
+<section class="page-hero"
+style="background-image: url('assets/img/khai-mon-hero.png');">
+<div class="page-hero-inner">
+    </div>
+</section>
+    <main class="page-main">
+
+        <!-- HERO NHỎ TRONG TRANG CON -->
+        <section class="subpage-hero">
+            <h1>Khai Môn Viện</h1>
+            <p class="subtitle">
+                Giới thiệu các pháp môn và mở duyên phân lớp cho hành giả muốn học bài bản.
+            </p>
+        </section>
+
+        <!-- 3 PHÁP MÔN XẾP NGANG -->
+        <section class="section section-phap-mon">
+            <h2 class="section-title">Các pháp môn trong Khai Môn Viện</h2>
+
+            <div class="phap-mon-grid">
+
+                <!-- TỬ VI -->
+                <article class="phap-mon-card">
+                    <h3>Tử Vi</h3>
+                    <p>
+                        Pháp môn đang khai mở. Đây là nền tảng quan trọng nhất của sơn môn,
+                        giúp hành giả hiểu mình – hiểu người – hiểu thời vận.
+                    </p>
+
+                    <h4>Nội dung học (tóm tắt):</h4>
+                    <ul>
+                        <li>Thiên bàn – khái chất và thiên mệnh</li>
+                        <li>Địa bàn – cục diện đời và vận trình vận hạn</li>
+                        <li>Luận cung – lao sau – lộ trình đời sống</li>
+                        <li>Cách lập luận &amp; xử lý số lý thực chiến</li>
+                    </ul>
+
+                    <h4>Ai phù hợp?</h4>
+                    <ul>
+                        <li>Người muốn hiểu bản thân sâu sắc</li>
+                        <li>Người định học để tư vấn cho người khác</li>
+                        <li>Người muốn xây nền tảng huyền học nghiêm túc</li>
+                    </ul>
+
+                    <a href="van-tam-cac.html" class="btn btn-primary">
+                        Xin dẫn sang Vấn Tâm Các
+                    </a>
+                </article>
+
+                <!-- TỨ TRỤ -->
+                <article class="phap-mon-card">
+                    <h3>Tứ Trụ</h3>
+                    <p>
+                        Pháp môn giúp hiểu về khí vận theo niên – nguyệt – nhật – thời.
+                        Hiện chưa khai môn, sơn môn đang chuẩn bị tài liệu và chương trình học.
+                    </p>
+
+                    <h4>Dự kiến nội dung:</h4>
+                    <ul>
+                        <li>Cấu trúc Tứ Trụ</li>
+                        <li>Ngũ hành – sinh khắc – dụng thần</li>
+                        <li>Kỹ thuật luận mệnh căn bản</li>
+                        <li>Phối hợp Tử Vi &amp; Tứ Trụ</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-secondary">
+                        Đăng ký khi khai môn
+                    </a>
+                </article>
+
+                <!-- PHONG THỦY -->
+                <article class="phap-mon-card">
+                    <h3>Phong Thủy</h3>
+                    <p>
+                        Pháp môn về dương trạch – vật phẩm – bố cục ngũ hành. Không dạy âm trạch.
+                        Hiện chỉ mở viện cho hành giả đọc tri thức căn bản.
+                    </p>
+
+                    <h4>Dự kiến nội dung:</h4>
+                    <ul>
+                        <li>Ngũ hành &amp; vật phẩm hộ thân</li>
+                        <li>Dương trạch cơ bản</li>
+                        <li>Bố trí phong thủy theo vận khí</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-secondary">
+                        Đăng ký quan tâm
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER GIỐNG TRANG CHỦ -->
+    <footer class="site-footer">
+        <p>© Bạch Y Các – 2025.</p>
+        <div class="footer-links">
+            <a href="#">Giới luật</a>
+            <a href="#">Điều khoản</a>
+            <a href="bach-y-tu-phong.html">Liên hệ</a>
+        </div>
+    </footer>
+
+    <!-- Nếu không có main.js cũng không sao, trình duyệt chỉ bỏ qua -->
+    
+</body>
+</html>
