@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Viết – Bạch Y Các</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo-link" aria-label="Bạch Y Các">
+                    <img src="assets/img/logo.png" class="site-logo" alt="Logo Bạch Y Các">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Sơn Môn</a>
+                <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+                <a href="khai-mon-vien.html">Khai Môn Viện</a>
+                <a href="van-tam-cac.html">Vấn Tâm Các</a>
+                <a href="bach-y-vien.html">Bạch Y Viện</a>
+                <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
+                <a href="blog.html" class="active">Bài viết</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero blog-hero">
+            <p class="eyebrow">Thư viện tri thức sống</p>
+            <h1>Bài viết Bạch Y Các</h1>
+            <p class="lead">Khám phá bài viết mới nhất, đọc chi tiết từng nội dung, hoặc quản trị danh mục – bài viết ngay tại đây.</p>
+            <div class="hero-actions">
+                <a class="btn" href="#user-area">Đọc bài viết</a>
+                <a class="btn-secondary" href="#admin-area">Khu quản trị</a>
+            </div>
+        </section>
+
+        <section id="user-area" class="card-block">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Người dùng</p>
+                    <h2>Xem và tìm kiếm bài viết</h2>
+                    <p>Chọn danh mục, tìm kiếm, và đọc chi tiết từng bài viết.</p>
+                </div>
+                <div class="filters">
+                    <div class="filter-item">
+                        <label for="searchInput">Tìm kiếm</label>
+                        <input id="searchInput" type="search" placeholder="Nhập tiêu đề, nội dung...">
+                    </div>
+                    <div class="filter-item">
+                        <label for="userCategoryFilter">Danh mục</label>
+                        <select id="userCategoryFilter"></select>
+                    </div>
+                    <div class="filter-item switch">
+                        <label for="newOnly">
+                            <input type="checkbox" id="newOnly"> Chỉ xem bài viết mới
+                        </label>
+                        <span class="hint">Bài viết mới = đăng trong 14 ngày</span>
+                    </div>
+                </div>
+            </div>
+            <div id="postList" class="post-grid"></div>
+        </section>
+
+        <section id="admin-area" class="card-block">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Quản trị viên</p>
+                    <h2>Quản lý danh mục & bài viết</h2>
+                    <p>Thêm danh mục, tạo bài viết mới, chỉnh sửa hoặc xóa; dữ liệu lưu cục bộ trên trình duyệt (localStorage).</p>
+                </div>
+            </div>
+
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <h3>Quản lý danh mục</h3>
+                    <form id="categoryForm" class="stack-form">
+                        <label for="categoryName">Tên danh mục</label>
+                        <input id="categoryName" type="text" required placeholder="VD: Tử Vi">
+                        <label for="categoryDescription">Mô tả ngắn</label>
+                        <textarea id="categoryDescription" rows="3" placeholder="Giới thiệu cho danh mục"></textarea>
+                        <button class="btn" type="submit">Thêm danh mục</button>
+                    </form>
+                    <div id="categoryList" class="pill-list"></div>
+                </div>
+
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <div>
+                            <h3>Quản lý bài viết</h3>
+                            <p class="muted">Tạo mới hoặc chỉnh sửa bài viết hiện có.</p>
+                        </div>
+                        <button class="btn-secondary" id="resetPostForm" type="button">Soạn bài mới</button>
+                    </div>
+                    <form id="postForm" class="stack-form">
+                        <input type="hidden" id="postId">
+                        <label for="postTitle">Tiêu đề</label>
+                        <input id="postTitle" type="text" required placeholder="Nhập tiêu đề bài viết">
+
+                        <label for="postCategory">Danh mục</label>
+                        <select id="postCategory" required></select>
+
+                        <label for="postExcerpt">Tóm tắt</label>
+                        <textarea id="postExcerpt" rows="3" required placeholder="Viết tóm tắt ngắn gọn"></textarea>
+
+                        <label for="postContent">Nội dung</label>
+                        <textarea id="postContent" rows="5" required placeholder="Viết nội dung chi tiết"></textarea>
+
+                        <label for="postVideoUrl">Link video YouTube (tùy chọn)</label>
+                        <div class="video-input-row">
+                            <input id="postVideoUrl" type="url" placeholder="https://www.youtube.com/watch?v=...">
+                            <button class="btn-secondary" id="insertVideo" type="button">Chèn vào nội dung</button>
+                        </div>
+                        <p class="hint">Dán link YouTube, video sẽ được nhúng trong bài và có thể chèn nhãn [Video] vào nội dung.</p>
+                        <div id="videoPreview" class="video-preview muted"></div>
+
+                        <button class="btn" type="submit">Lưu bài viết</button>
+                    </form>
+                    <div id="adminPostList" class="admin-post-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Bạch Y Các – 2025.</p>
+        <div class="footer-links">
+            <a href="#">Giới luật</a>
+            <a href="#">Điều khoản</a>
+            <a href="bach-y-tu-phong.html">Liên hệ</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>
