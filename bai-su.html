@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bái Sư Nhập Môn – Nội Viện</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <section class="page-hero" style="background-image: url('assets/img/hero-bai-su.png');">
+            <div class="page-hero-inner"></div>
+        </section>
+        <div class="main-menu-below">
+            <nav class="main-nav">
+                <a href="index.html" class="active">Sơn Môn</a>
+                <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+                <a href="khai-mon-vien.html">Khai Môn Viện</a>
+                <a href="van-tam-cac.html">Vấn Tâm Các</a>
+                <a href="bach-y-vien.html">Bạch Y Viện</a>
+                <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
+                <a href="blog.html">Bài viết</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <h1>Bái Sư Nhập Môn</h1>
+        <p>Chỉ dành cho hồ sơ đã được Trưởng Lão duyệt. Bái sư xong sẽ vào Nội Viện.</p>
+    </section>
+
+    <section class="ceremony container">
+        <div class="card">
+            <h2>Đăng nhập để kiểm tra duyên</h2>
+            <form id="ceremony-email-form" class="stacked-form">
+                <label class="stack">
+                    <span class="label">Email học viên</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <button class="btn" type="submit">Nhận magic link</button>
+            </form>
+            <p id="initiation-status" class="notice">Vui lòng đăng nhập email để tiếp tục.</p>
+        </div>
+
+        <div class="card">
+            <h2>Thực hiện nghi lễ</h2>
+            <form id="oath-form" class="stacked-form" hidden>
+                <label class="stack">
+                    <span class="label">Đạo danh (readonly)</span>
+                    <input id="dao-danh" type="text" readonly>
+                </label>
+                <label class="stack">
+                    <span class="label">Lời thệ bái sư</span>
+                    <textarea name="oath" rows="4" placeholder="Con xin phát nguyện..." required></textarea>
+                </label>
+                <button class="btn" type="submit">Hoàn tất bái sư</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Bạch Y Các – 2025.</p>
+        <div class="footer-links">
+            <a href="#">Giới luật</a>
+            <a href="#">Điều khoản</a>
+            <a href="bach-y-tu-phong.html">Liên hệ</a>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/initiation.js"></script>
+</body>
+</html>

@@ -3,27 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nội Viện – Học Viên Bạch Y Các</title>
+    <title>Nội viện - Đệ tử nội môn</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
 
     <!-- HEADER -->
     <header>
+        <section class="page-hero" style="background-image: url('assets/img/noi-vien-hero.png');">
+            <div class="page-hero-inner"></div>
+        </section>
         <div class="main-menu-below">
-    <nav class="main-nav">
+            
+        
+<nav class="main-nav">
         <a href="index.html" class="active">Sơn Môn</a>
-        <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
-        <a href="khai-mon-vien.html">Khai Môn Viện</a>
-        <a href="van-tam-cac.html">Vấn Tâm Các</a>
-        <a href="bach-y-vien.html">Bạch Y Viện</a>
-        <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
-        <a href="blog.html">Bài viết</a>
-    </nav>
-
-        </nav>
+                <a href="tam-canh-duong.html">Tâm Cảnh Đường</a>
+                <a href="khai-mon-vien.html">Khai Môn Viện</a>
+                <a href="van-tam-cac.html">Vấn Tâm Các</a>
+                <a href="bach-y-vien.html">Bạch Y Viện</a>
+                <a href="bach-y-tu-phong.html">Bạch Y Tư Phòng</a>
+                <a href="blog.html">Bài viết</a>
+            </nav>
+        </div>
     </header>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <h1>Nội Viện</h1>
+        <p></p>
+        <h1>Đệ tử nội viện</h1>
+        <p>Danh sách học viên đã bái sư</p>
+    </section>
+
+       
+     <section class="inner-disciples container">
+        <div class="filter-row">
+            <label for="practice-filter">Lọc theo pháp môn</label>
+            <select id="practice-filter">
+                <option value="">Tất cả pháp môn</option>
+            </select>
+            </div>
+    
+     </header>
 
     <!-- TITLE -->
     <section class="page-title">
@@ -48,8 +70,7 @@
 
         <div class="course-card">
             <h3>Tử Vi – Nội môn căn bản</h3>
-            <p>Khóa học khai môn dành cho hành giả vừa được nhận duyên.</p>
-            <a href="#" class="btn">Vào lớp</a>
+@@ -53,50 +53,110 @@
         </div>
 
         <div class="course-card">
@@ -73,6 +94,66 @@
             <p class="excerpt">Thiên bàn là thứ tiên thiên, bất biến. Người học phải xem nó như gốc rễ của mọi luận pháp…</p>
             <a href="#" class="read-more">Đọc tài liệu →</a>
         </div>
+    </section>
+
+    <!-- STUDENT MEDIA -->
+    <section class="gallery-section">
+        <h2>Tư liệu học viên & khóa học</h2>
+        <p class="muted">Đăng ảnh tư liệu để lưu giữ kỷ niệm và minh chứng tiến trình học.</p>
+
+        <form id="galleryForm" class="stacked-card">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Tên ảnh / chú thích</label>
+                    <input type="text" id="galleryTitle" name="galleryTitle" placeholder="Ví dụ: Buổi thuyết trình đầu khóa" required>
+                </div>
+                <div class="form-group">
+                    <label>Pháp môn / khóa học</label>
+                    <input type="text" id="galleryCourse" name="galleryCourse" placeholder="Ví dụ: Tử Vi – Nội môn">
+                </div>
+            </div>
+
+            <label>Link ảnh tư liệu</label>
+            <input type="url" id="galleryImageUrl" name="galleryImageUrl" placeholder="Dán link ảnh (drive, imgbb,...)" required>
+
+            <button class="btn" type="submit">Đăng ảnh vào Nội viện</button>
+        </form>
+
+        <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="schedule-section">
+        <h2>Lịch học từng pháp môn</h2>
+        <p class="muted">Cập nhật khung giờ học để hành giả chủ động sắp xếp.</p>
+
+        <form id="scheduleForm" class="stacked-card">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Pháp môn / khóa học</label>
+                    <input type="text" id="scheduleCourse" name="scheduleCourse" placeholder="Ví dụ: Tử Vi nội môn" required>
+                </div>
+                <div class="form-group">
+                    <label>Khung giờ</label>
+                    <input type="text" id="scheduleSlot" name="scheduleSlot" placeholder="Ví dụ: Thứ 4 – 20:00 đến 22:00" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Người phụ trách</label>
+                    <input type="text" id="scheduleMentor" name="scheduleMentor" placeholder="Tên Các Chủ / huynh trưởng">
+                </div>
+                <div class="form-group">
+                    <label>Hình thức</label>
+                    <input type="text" id="scheduleFormat" name="scheduleFormat" placeholder="Ví dụ: Zoom, Google Meet, trực tiếp">
+                </div>
+            </div>
+
+            <button class="btn" type="submit">Thêm lịch học</button>
+        </form>
+
+        <div id="scheduleList" class="schedule-list"></div>
     </section>
 
     <!-- ANNOUNCEMENTS -->
@@ -100,6 +181,26 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+
+</section>
+<div id="disciple-loading" class="notice">Đang tải danh sách...</div>
+        <div id="disciple-empty" class="notice" hidden>Chưa có đệ tử nội môn nào hiển thị.</div>
+
+
+
+  <div id="disciplesList" class="disciples-grid">
+  </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Bạch Y Các – 2025.</p>
+        <div class="footer-links">
+            <a href="#">Giới luật</a>
+            <a href="#">Điều khoản</a>
+            <a href="bach-y-tu-phong.html">Liên hệ</a>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/inner-disciples.js"></script>
 </body>
 </html>
